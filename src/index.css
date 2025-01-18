@@ -1,0 +1,35 @@
+/* index.css */
+
+/* Reset basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Let body scroll with smooth behavior */
+html, body {
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+/* Dark background, default text color */
+body {
+  background-color: #0f0f0f;
+  color: #d0d0d0;
+  font-family: 'Manrope', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Larger headings, white text */
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Ensure paragraphs and list items are justified */
+p, li {
+  text-align: justify;
+  line-height: 1.6;
+}

@@ -1,0 +1,79 @@
+/* Skills.css */
+.skills-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.skills-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.skills-intro {
+  margin-bottom: 2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.skill-category {
+  padding: 1.5rem;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.skill-category.unboxed {
+  background-color: transparent;
+}
+
+/* Slightly more faded fill on hover, text brightening */
+.skill-category.unboxed:hover {
+  background-color: rgba(46, 252, 163, 0.3);
+}
+
+.skill-category.unboxed:hover * {
+  color: #fff;
+}
+
+.skill-category h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+/* SWAP colors:
+   - background => dark
+   - text => your green accent (#2efca3)
+*/
+.skill-badge {
+  background-color: #333; /* a dark shade */
+  color: #2efca3;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0; /* sharp edges */
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: #555; /* a bit lighter? */
+  color: #23dc8d;
+}

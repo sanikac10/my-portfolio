@@ -1,0 +1,39 @@
+/* Hero.css */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  max-width: 800px;
+}
+
+.top-fade {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  background: linear-gradient(to bottom, #0f0f0f 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 2;
+}
