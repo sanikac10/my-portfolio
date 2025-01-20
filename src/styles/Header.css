@@ -1,0 +1,141 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  background-color: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.header-logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header-logo:hover {
+  color: #2efca3;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-links li a:hover {
+  color: #2efca3;
+  background-color: rgba(46, 252, 163, 0.1);
+}
+
+.nav-links li a.active {
+  color: #2efca3;
+  background-color: rgba(46, 252, 163, 0.1);
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: calc(100% - 2rem);
+  height: 2px;
+  background-color: #2efca3;
+  transition: transform 0.2s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+  }
+
+  .nav-links li a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Adjust header when page is scrolled */
+.app-scrolled .header-container {
+  padding: 1rem 2rem;
+  background-color: rgba(15, 15, 15, 0.98);
+}
+
+/* Add hamburger styles */
+.hamburger {
+  display: none;  /* Hidden by default */
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  z-index: 1001;
+}
+
+/* Update media query */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;  /* Show only on mobile */
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -100%;  /* Hide off-screen initially */
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(10px);
+    padding-top: 5rem;
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;  /* Slide in when active */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+}

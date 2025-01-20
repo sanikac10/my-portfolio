@@ -1,0 +1,128 @@
+.acad-extra-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #0f0f0f;
+    min-height: 100vh;
+  }
+  
+  .acad-extra-section h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .acad-extra-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #2efca3;
+    border-radius: 2px;
+  }
+  
+  .achievements-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .achievement-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #2a2a2a;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2efca3, #147ca6);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(46, 252, 163, 0.1);
+    border-color: #2efca3;
+  }
+  
+  .achievement-card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .achievement-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+  
+  .achievement-card h4 {
+    font-size: 1.1rem;
+    color: #2efca3;
+    margin-bottom: 0.5rem;
+  }
+  
+  .achievement-date {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .achievement-description {
+    color: #ddd;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .achievement-highlights {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid #2a2a2a;
+    padding-top: 1.5rem;
+  }
+  
+  .achievement-highlights li {
+    color: #ddd;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .highlight-number {
+    color: #2efca3;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .acad-extra-section {
+      padding: 3rem 1rem;
+    }
+  
+    .achievement-card {
+      padding: 1.5rem;
+    }
+  
+    .achievement-card h3 {
+      font-size: 1.3rem;
+    }
+  }
+  

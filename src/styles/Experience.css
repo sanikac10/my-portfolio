@@ -1,0 +1,66 @@
+/* Experience.css */
+.experience-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* optional top fade, if you want each section to fade near top
+   .experience-section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 3rem;
+     background: linear-gradient(to bottom, #0f0f0f, transparent);
+     pointer-events: none;
+     z-index: 2;
+   }
+*/
+
+.experience-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  transition: box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.experience-card.unboxed {
+  box-shadow: none;
+  border: none;
+}
+
+/* Sharp edges on hover, with a box */
+.experience-card.unboxed:hover {
+  border: 1px solid #2efca3; /* accent color for border? or #333 if you prefer */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  border-radius: 0;
+}
+
+.experience-card h3 {
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.experience-card h4 {
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.experience-card ul {
+  list-style: disc inside;
+  color: #ccc;
+  line-height: 1.6;
+}

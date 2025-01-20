@@ -1,0 +1,93 @@
+/* App.css */
+.App {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Main content styles */
+.main-content {
+  position: relative;
+  padding-top: 70px; /* Height of header */
+  min-height: 100vh;
+  width: 100%;
+  transition: all 0.5s ease-out;
+  z-index: 1;
+}
+
+.app-scrolled .main-content {
+  margin-left: 50%;
+  width: 50%;
+}
+
+/* Update bg-code-snippet to be visible */
+.bg-code-snippet {
+  position: fixed;
+  top: 40%;
+  right: 70%;
+  transform: translateY(-50%);
+  color: #2efca3;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.17;
+  pointer-events: none;
+  z-index: 2; /* Increased z-index */
+  width: 280px;
+  white-space: pre;
+}
+
+/* Your existing color classes */
+.tag-color {
+  color: #5eb2ff;
+}
+.js-fn {
+  color: #ffa500;
+}
+.js-method {
+  color: #ffd700;
+}
+.string {
+  color: #ddaaee;
+}
+.comment {
+  color: #777;
+  font-style: italic;
+}
+
+/* Pointer highlight */
+.pointer-bubble {
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(
+    circle at center,
+    rgba(80, 80, 80, 0.13),
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: screen;
+
+}
+
+/* Add styles for section visibility */
+section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .app-scrolled .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .bg-code-snippet {
+    display: none;
+  }
+}

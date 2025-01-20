@@ -1,0 +1,53 @@
+.wall-of-love-section {
+    padding: 4rem 2rem;
+    background-color: #0f0f0f;
+    overflow: hidden;
+  }
+  
+  .testimonials-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .testimonials-scroll {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 40s linear infinite;
+    width: max-content;
+    padding: 2rem 0;
+  }
+  
+  .testimonial-card {
+    width: 300px;
+    padding: 2rem;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .testimonial-author h4 {
+    color: #2efca3;
+    margin-bottom: 0.25rem;
+  }
+  
+  .testimonial-author p {
+    color: #888;
+    font-size: 0.9rem;
+  }

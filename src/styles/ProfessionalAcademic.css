@@ -1,0 +1,134 @@
+.professional-academic-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #0f0f0f;
+    min-height: 100vh;
+  }
+  
+  .professional-academic-section h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .professional-academic-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #2efca3;
+    border-radius: 2px;
+  }
+  
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .experience-card {
+    width: 100%;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #2a2a2a;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2efca3, #147ca6);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(46, 252, 163, 0.1);
+    border-color: #2efca3;
+  }
+  
+  .experience-card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .experience-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .experience-card h4 {
+    font-size: 1.1rem;
+    color: #2efca3;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .experience-card p {
+    font-size: 1rem;
+    color: #ddd;
+    margin: 0.75rem 0;
+    line-height: 1.6;
+  }
+  
+  .experience-card p:nth-of-type(1) {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  
+  .experience-stack {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #2a2a2a;
+  }
+  
+  .experience-stack svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+  }
+  
+  .experience-stack svg:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .professional-academic-section {
+      padding: 3rem 1rem;
+    }
+    
+    .experience-card {
+      padding: 1.5rem;
+    }
+    
+    .experience-card h3 {
+      font-size: 1.3rem;
+    }
+    
+    .experience-card h4 {
+      font-size: 1rem;
+    }
+  }
