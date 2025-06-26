@@ -30,7 +30,9 @@ const techIcons = {
   "data-visualization": SiD3Dotjs,
   d3: SiD3Dotjs,
   swift: SiSwift,
-  json: FaFileCode
+  json: FaFileCode,
+  pandas: SiPandas,
+  numpy: SiNumpy,
 };
 
 const brandColors = {
@@ -48,15 +50,23 @@ const brandColors = {
   swift: "#FA7343",
   chartdot: "",
   FaFileCode: "#3A3D98",
+  pandas: "#150458",
+  numpy: "#013243",
 };
 
 const projects = [
+  {
+    title: "Multi-Stage Reasoning Framework for VLLMs",
+    date: "April 2025",
+    description: "A synthetic data generation pipeline for the ARC-AGI-2 challenge benchmark, demonstrating superior general pattern recognition capabilities in our vision-LLM model.",
+    stack: ["python", "gpt-api", "tensorflow", "data-analysis"],
+  },
   {
     title: "Data Leakage in LLMs",
     date: "December 2024",
     description:
       "Designed a detection pipeline to identify data leakage scenarios in LLMs, evaluating models like GPT-4o and Llama-3.2.",
-    stack: ["python", "gpt-api", "claude-api", "data-analysis"],
+    stack: ["python", "gpt-api", "claude-api", "tensorflow","data-analysis"],
   },
   {
     title: "KAN You See the Bias?",

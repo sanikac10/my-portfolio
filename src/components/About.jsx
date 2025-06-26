@@ -8,7 +8,7 @@ function About() {
     <section id="about" className="about-section">
   <h2>About Me</h2>
   <p>
-  My journey has encompassed full-stack development, data science, machine learning, natural language processing (NLP), and beyond. I am passionate about crafting impactful software solutions that seamlessly blend innovation, data-driven insights, and user-centric design.
+  I’m an AI researcher and recent Computer Science graduate from Arizona State University, specializing in reasoning, in-context fine-tuning (IFT), training optimisation and alignment. My work centers on advanced reinforcement-learning algorithms (GRPO & PPO), Supervised Fine Tuning (SFT), LLM Security and reasoning-distillation (DeepSeek-R1), with a focus on robust LLM data-leakage evaluation.
 
   </p>
 </section>

@@ -43,7 +43,9 @@ import {
     pandas: SiPandas,
     d3: SiD3Dotjs,
     docker: SiDocker,
-    swift: SiSwift
+    swift: SiSwift,
+    "gpt-api": SiOpenai,
+    "claude-api": FaRobot,
   };
   
   const brandColors = {
@@ -71,18 +73,42 @@ import {
     d3: "#F9A03C",
     pytorch: "#EE4C2C",
     docker:"#2496ED",
-    kafka: "#00C7B7"
+    kafka: "#00C7B7",
+    "gpt-api": "#412991",
+    "claude-api": "#2EFCA3",
   };
 
 const experiences = [
   
   {
-    title: "Software Developer Intern",
-    subheading: "Vidyalankar Institute of Technology, Mumbai",
-    date: "August 2021",
+    title: "AI Researcher",
+    subheading: "Arizona State University",
+    date: "June 2025",
+    description: "Working on mulitmodel retrieval embeddings and object-object similarity relationship, along with data leakage pipeline to detect potential ways for data leakage in Large Language Models",
+    stack: ["python", "pytorch", "gpt-api", "claude-api","tensorflow", "numpy", "pandas", "git"],
+  },
+  {
+    title: "AI Reseach",
+    subheading: "Arizona State University",
+    date: "January 2025",
+    description: "Implemented distributed training of large language models (Qwen 2.5 Math 7B) with CUDA, with distributed training with A100 GPUs, achieving a 2.8x training throughput increase through system optimization, parallel processing. Replicated and enhanced Tiny Zero reasoning framework using iterative SFT instead of GRPO, incorporating iterative fine-tuning with correct/incorrect labels (Reinforcement Learning) to improve model performance by 15%. Designed a comprehensive evaluation framework with automated metrics tracking, reducing assessment time by 70% while increasing result reliability. Engineered SLURM scripts for efficient resource allocation and batch processing, enabling 24/7 training utilization across shared compute infrastructure.",
+    stack: ["python", "pytorch", "tensorflow", "gpt-api", "claude-api", "numpy", "pandas", "git"],
+  },
+  {
+    title: "Research Assistant",
+    subheading: "Arizona State University",
+    date: "December 2024",
     description:
-      "Implemented a student repository system using Java and MySQL, reducing overhead for school officials.",
-    stack: ["java", "mysql", "git", "docker"],
+      "Researched and developed spatial query algorithms and conducted performance benchmarking for SparkSQL.",
+    stack: ["postgresql", "apache-spark", "kafka", "linux", "git"],
+  },
+  {
+    title: "Teaching Assistant, Artificial Intelligence",
+    subheading: "Vidyalankar Institute of Technology, Mumbai",
+    date: "June 2023",
+    description:
+      "Guided 100+ students in AI and Data Science lab experiments, utilizing Python libraries and tools for hands-on learning.",
+    stack: ["numpy", "tensorflow", "scikit-learn", "pandas", "pytorch", "jupyter"],
   },
   {
     title: "Frontend Engineer Intern",
@@ -93,29 +119,14 @@ const experiences = [
     stack: ["react", "adobe-xd", "ui-ux"],
   },
   {
-    title: "Research Assistant",
-    subheading: "Arizona State University",
-    date: "December 2024",
-    description:
-      "Researched and developed spatial query algorithms and conducted performance benchmarking for SparkSQL.",
-    stack: ["postgresql", "apache-spark", "kafka", "linux"],
-  },
-  {
-    title: "Graduate Services Assistant (Grader – CSE330, CSE355, CSE511, IFT166)",
-    subheading: "Arizona State University, Tempe, AZ",
-    date: "May 2024 - May 2025",
-    description:
-      "Guided students in designing scalable data processing pipelines and integrating outputs into distributed database setups.",
-    stack: ["python", "postgresql", "apache-spark", "data-pipelines", "docker", "kafka"],
-  },
-  {
-    title: "Teaching Assistant, Artificial Intelligence",
+    title: "Software Developer Intern",
     subheading: "Vidyalankar Institute of Technology, Mumbai",
-    date: "June 2023",
+    date: "August 2021",
     description:
-      "Guided 100+ students in AI and Data Science lab experiments, utilizing Python libraries and tools for hands-on learning.",
-    stack: ["numpy", "tensorflow", "scikit-learn", "pandas", "pytorch", "jupyter"],
+      "Implemented a student repository system using Java and MySQL, reducing overhead for school officials.",
+    stack: ["java", "mysql", "git", "docker"],
   },
+  
 ];
 
 const ProfessionalAcademic = () => {
