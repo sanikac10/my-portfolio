@@ -29,10 +29,11 @@ function Hero({ scrolled }) {
   useEffect(() => {
     const typed = new Typed(typedElementRef.current, {
       strings: [
-        'interfaces',
-        'LLM APIs',
-        'data visualizations',
-        'ML-driven solutions',
+        'LLM training pipelines',
+        'Full Fine Tuning (IFT/SFT)',
+        'Training Optimisation',
+        'LLM security',
+        'Visual and Language models',
       ],
       typeSpeed: 70,
       backSpeed: 40,
@@ -64,7 +65,7 @@ function Hero({ scrolled }) {
       <h1 className="hero-title">Hi, I&apos;m Sanika</h1>
 
       <p className="hero-subtitle">
-        I build <span ref={typedElementRef}></span>
+        I work on <span ref={typedElementRef}></span>
       </p>
 
       <div className="hero-contact-icons">

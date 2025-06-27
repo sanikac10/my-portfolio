@@ -13,7 +13,7 @@ import {
     SiScikitlearn, SiTensorflow, SiPandas, 
     SiAdobexd, SiGraphql, SiGit, SiGithub,
     SiD3Dotjs, SiNodedotjs, SiReact, SiJavascript,
-    SiTypescript, SiApache, SiJupyter, SiPytorch, SiDocker, SiApachekafka, SiSwift, SiLinux
+    SiTypescript, SiApache, SiJupyter, SiPytorch, SiDocker, SiApachekafka, SiSwift, SiLinux, SiOpenai
   } from "react-icons/si";
   
   const techIcons = {

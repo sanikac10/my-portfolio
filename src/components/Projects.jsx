@@ -12,7 +12,7 @@ import {
   SiTensorflow, SiMongodb, SiFirebase,
   SiJupyter, SiScikitlearn, SiPandas,
   SiOpenai, SiD3Dotjs, SiNodedotjs,
-  SiJavascript, SiTypescript, SiSwift, SiJson
+  SiJavascript, SiTypescript, SiSwift, SiJson, SiNumpy
 } from "react-icons/si";
 
 const techIcons = {
