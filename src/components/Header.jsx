@@ -51,18 +51,6 @@ function Header() {
               About
             </Link> */}
           </li>
-          <li>
-            <Link
-              to="skills"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              activeClass="active"
-            >
-              Skills
-            </Link>
-          </li>
           
           <li>
             <Link
