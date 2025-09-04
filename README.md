@@ -52,12 +52,19 @@ my-portfolio/
   ┃ ┃ ┣ Experience.css
   
   ┃ ┃ ┣ Projects.css
+  
   ┃ ┃ ┣ Publications.css
+  
   ┃ ┃ ┣ Leadership.css
+  
   ┃ ┃ ┣ Academic.css
+  
   ┃ ┃ ┣ Contact.css
+  
   ┃ ┃ ┣ Footer.css
+  
   ┃ ┃ ┗ WallOfLove.jsx
+  
   ┃ ┣ App.css
   ┃ ┣ App.jsx
   ┃ ┣ index.css
