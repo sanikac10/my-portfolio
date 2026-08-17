@@ -1,145 +1,52 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { DiDatabase } from "react-icons/di";
-import "../styles/ProfessionalAcademic.css";
-import { 
-    FaPython, FaJava, FaFigma, FaDatabase,
-    FaBrain, FaChartBar, FaCode, FaRobot,
-    FaAws
-  } from "react-icons/fa";
-  
-  import { 
-    SiPostgresql, SiMysql, SiNumpy, 
-    SiScikitlearn, SiTensorflow, SiPandas, 
-    SiAdobexd, SiGraphql, SiGit, SiGithub,
-    SiD3Dotjs, SiNodedotjs, SiReact, SiJavascript,
-    SiTypescript, SiApache, SiJupyter, SiPytorch, SiDocker, SiApachekafka, SiSwift, SiLinux, SiOpenai
-  } from "react-icons/si";
-  
-  const techIcons = {
-    python: FaPython,
-    java: FaJava,
-    aws: FaAws,
-    figma: FaFigma,
-    pytorch: SiPytorch,
-    linux: SiLinux,
-    javascript: SiJavascript,
-    typescript: SiTypescript,
-    jupyter: SiJupyter,
-    kafka: SiApachekafka,
-    react: SiReact,
-    nodejs: SiNodedotjs,
-    postgresql: SiPostgresql,
-    "data-pipelines": FaChartBar,
-    mysql: SiMysql,
-    git: SiGit,
-    github: SiGithub,
-    "adobe-xd": SiAdobexd,
-    "ui-ux": FaFigma,
-    "apache-spark": SiApache,
-    numpy: SiNumpy,
-    "scikit-learn": SiScikitlearn,
-    tensorflow: SiTensorflow,
-    pandas: SiPandas,
-    d3: SiD3Dotjs,
-    docker: SiDocker,
-    swift: SiSwift,
-    "gpt-api": SiOpenai,
-    "claude-api": FaRobot,
-  };
-  
-  const brandColors = {
-    python: "#3776AB",
-    java: "#007396",
-    linux: "#FCC624",
-    "data-pipelines": "#FF6B6B",
-    FaChartBar: "#2C699A",
-    aws: "#FF9900",
-    javascript: "#F7DF1E",
-    typescript: "#3178C6",
-    react: "#61DAFB",
-    nodejs: "#339933",
-    postgresql: "#4169E1",
-    mysql: "#4479A1",
-    git: "#F05032",
-    github: "#181717",
-    figma: "#F24E1E",
-    "adobe-xd": "#FF61F6",
-    "apache-spark": "#E25A1C",
-    numpy: "#013243",
-    "scikit-learn": "#F7931E",
-    tensorflow: "#FF6F00",
-    pandas: "#150458",
-    d3: "#F9A03C",
-    pytorch: "#EE4C2C",
-    docker:"#2496ED",
-    kafka: "#00C7B7",
-    "gpt-api": "#412991",
-    "claude-api": "#2EFCA3",
-  };
+import React from 'react';
+import { motion } from 'framer-motion';
+import '../styles/ProfessionalAcademic.css';
 
 const experiences = [
-  
   {
-    title: "AI Researcher",
-    subheading: "Arizona State University",
-    date: "June 2025",
-    description: "Working on mulitmodel retrieval embeddings and object-object similarity relationship, along with data leakage pipeline to detect potential ways for data leakage in Large Language Models",
-    stack: ["python", "pytorch", "gpt-api", "claude-api","tensorflow", "numpy", "pandas", "git"],
+    title: 'Research Engineer – Evals Lead',
+    subheading: 'May 2026 – Present',
+    bullets: [
+      'Own the end-to-end agentic ML pipeline—task definition, generation, validation, data collection, fine-tuning, and benchmarking—across on-device phone and computer-use agents targeting reward design, regression detection, and eval harness reliability.',
+      'Curated gold-standard training datasets for fine-tuning, directly improving agent performance by 20%.',
+      'Designed QA rubrics and golden-trajectory review processes for long-horizon tasks, establishing auditable evaluation frameworks that separate model failures from judge, task, environment, and harness errors.',
+      'Led third-party annotation vendors and independent contractors across the full data annotation lifecycle, enforcing rubric consistency and data quality standards.',
+    ],
+    tags: [],
   },
   {
-    title: "AI Reseach",
-    subheading: "Arizona State University",
-    date: "January 2025",
-    description: "Implemented distributed training of large language models (Qwen 2.5 Math 7B) with CUDA, with distributed training with A100 GPUs, achieving a 2.8x training throughput increase through system optimization, parallel processing. Replicated and enhanced Tiny Zero reasoning framework using iterative SFT instead of GRPO, incorporating iterative fine-tuning with correct/incorrect labels (Reinforcement Learning) to improve model performance by 15%. Designed a comprehensive evaluation framework with automated metrics tracking, reducing assessment time by 70% while increasing result reliability. Engineered SLURM scripts for efficient resource allocation and batch processing, enabling 24/7 training utilization across shared compute infrastructure.",
-    stack: ["python", "pytorch", "tensorflow", "gpt-api", "claude-api", "numpy", "pandas", "git"],
+    title: 'AI Research — Google Gemini Project Team at Turing',
+    subheading: 'September 2025 – May 2026',
+    bullets: [
+      'Designed a multimodal evaluation framework for technically grounded image-generation tasks.',
+      'Benchmarked frontier multimodal LLMs, including Gemini variants, for stability, variance, and consistency across repeated runs.',
+      'Built automated evaluation pipelines that cut analysis turnaround by 60% and produced research reports translating visual performance gaps into model-improvement signals.',
+    ],
+    tags: [],
   },
   {
-    title: "Research Assistant",
-    subheading: "Arizona State University",
-    date: "December 2024",
-    description:
-      "Researched and developed spatial query algorithms and conducted performance benchmarking for SparkSQL.",
-    stack: ["postgresql", "apache-spark", "kafka", "linux", "git"],
+    title: 'Research Assistant',
+    subheading: 'Arizona State University · January 2025 – Present',
+    bullets: [
+      'Implemented distributed training of large language models (Qwen 2.5 Math 7B) with CUDA, PyTorch, FlashAttention, and vLLM on A100 GPUs, achieving a 2.8x training throughput increase through system optimization.',
+      'Replicated and enhanced the Tiny Zero reasoning framework using iterative SFT in place of GRPO, improving model performance by 15% through self-learning.',
+      'Designed a comprehensive evaluation framework with automated metrics tracking and effective resource allocation, reducing assessment time by 70% while increasing result reliability.',
+    ],
+    tags: ['CUDA', 'PyTorch', 'FlashAttention', 'vLLM'],
   },
-  {
-    title: "Teaching Assistant, Artificial Intelligence",
-    subheading: "Vidyalankar Institute of Technology, Mumbai",
-    date: "June 2023",
-    description:
-      "Guided 100+ students in AI and Data Science lab experiments, utilizing Python libraries and tools for hands-on learning.",
-    stack: ["numpy", "tensorflow", "scikit-learn", "pandas", "pytorch", "jupyter"],
-  },
-  {
-    title: "Frontend Engineer Intern",
-    subheading: "Conected VIT, Mumbai",
-    date: "March 2022",
-    description:
-      "Designed and implemented UI/UX components using Figma and Adobe XD, resulting in a 1.25x increase in user engagement.",
-    stack: ["react", "adobe-xd", "ui-ux"],
-  },
-  {
-    title: "Software Developer Intern",
-    subheading: "Vidyalankar Institute of Technology, Mumbai",
-    date: "August 2021",
-    description:
-      "Implemented a student repository system using Java and MySQL, reducing overhead for school officials.",
-    stack: ["java", "mysql", "git", "docker"],
-  },
-  
 ];
 
 const ProfessionalAcademic = () => {
   return (
-    <motion.section 
-      id="professional-academic" 
+    <motion.section
+      id="professional-academic"
       className="professional-academic-section"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      <h2>Professional & Academic Experience</h2>
+      <h2>Experience</h2>
       <div className="experience-container">
         {experiences.map((experience, index) => (
           <motion.div
@@ -152,28 +59,20 @@ const ProfessionalAcademic = () => {
           >
             <h3>{experience.title}</h3>
             <h4>{experience.subheading}</h4>
-            <p>{experience.date}</p>
-            <p>{experience.description}</p>
-            <div className="experience-stack">
-                {experience.stack.map((tech) => {
-                    const IconComponent = techIcons[tech];
-                    return IconComponent ? (
-                    <IconComponent 
-                        key={tech} 
-                        color={brandColors[tech] || "#2efca3"}
-                        style={{
-                        backgroundColor: tech === 'github' ? '#fff' : 'transparent',
-                        borderRadius: tech === 'github' ? '50%' : '0',
-                        padding: tech === 'github' ? '4px' : '0'
-                        }}
-                    />
-                    ) : (
-                    <span key={tech} className="fallback-icon">
-                        {tech.charAt(0).toUpperCase()}
-                    </span>
-                    );
-                })}
-                </div>
+            <ul className="experience-bullets">
+              {experience.bullets.map((bullet, i) => (
+                <li key={i}>{bullet}</li>
+              ))}
+            </ul>
+            {experience.tags.length > 0 && (
+              <div className="experience-tags">
+                {experience.tags.map((tag) => (
+                  <span key={tag} className="experience-tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
           </motion.div>
         ))}
       </div>

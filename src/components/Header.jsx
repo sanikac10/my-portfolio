@@ -1,9 +1,9 @@
-import React, { useState } from 'react';  
-import { FaBars, FaTimes } from 'react-icons/fa';  
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import '../styles/Header.css';
 
-
+const resumePdf = `${import.meta.env.BASE_URL}assets/resume.pdf`;
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,14 +13,15 @@ function Header() {
 
   return (
     <header className="header-container">
-      <a
+      <Link
         className="header-logo"
-        href="https://github.com/sanikac10/resume/blob/main/Sanika_Chavan_Resume_ML.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
+        to="top"
+        smooth={true}
+        offset={0}
+        duration={500}
       >
-        Resume
-      </a>
+        Sanika Chavan
+      </Link>
       <div className="hamburger" onClick={toggleMenu}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </div>
@@ -28,30 +29,20 @@ function Header() {
       <nav className={`nav-menu ${isOpen ? 'active' : ''}`}>
         <ul className="nav-links">
           <li>
-            <Link
-              to="top"
-              smooth={true}
-              offset={0}
-              duration={500}
-              activeClass="active"
-              spy= {false}
-            >
+            <Link to="top" smooth={true} offset={0} duration={500} activeClass="active" spy={false}>
               Home
             </Link>
           </li>
           <li>
-            {/* <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              activeClass="active"
-            >
+            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
               About
-            </Link> */}
+            </Link>
           </li>
-          
+          <li>
+            <Link to="skills" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
+              Skills
+            </Link>
+          </li>
           <li>
             <Link
               to="professional-academic"
@@ -65,28 +56,19 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              activeClass="active"
-            >
+            <Link to="projects" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
               Projects
             </Link>
           </li>
           <li>
-            <Link
-              to="wall-of-love"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              activeClass="active"
-            >
-              Wall of Love
+            <Link to="research" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
+              Research
             </Link>
+          </li>
+          <li>
+            <a href={resumePdf} target="_blank" rel="noopener noreferrer" className="nav-resume-link">
+              Resume
+            </a>
           </li>
         </ul>
       </nav>

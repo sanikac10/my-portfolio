@@ -1,0 +1,127 @@
+.research-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.research-section h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.research-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #2efca3;
+  border-radius: 2px;
+}
+
+.research-stats {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.research-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.research-stat-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2efca3;
+}
+
+.research-stat-label {
+  font-size: 0.85rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.25rem;
+}
+
+.research-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.research-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #2a2a2a;
+  text-align: left;
+}
+
+.research-item:first-child {
+  border-top: 1px solid #2a2a2a;
+}
+
+.research-item-title {
+  color: #ddd;
+  font-size: 0.98rem;
+}
+
+.research-item-year {
+  color: #888;
+  font-size: 0.85rem;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.research-scholar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.75rem;
+  border: 2px solid #2efca3;
+  border-radius: 999px;
+  color: #2efca3;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.research-scholar-btn:hover {
+  background-color: #2efca3;
+  color: #0f0f0f;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .research-section {
+    padding: 3rem 1rem;
+  }
+
+  .research-stats {
+    gap: 2rem;
+  }
+
+  .research-item {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

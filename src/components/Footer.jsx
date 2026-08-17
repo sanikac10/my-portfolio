@@ -14,9 +14,7 @@ function Footer() {
       viewport={{ once: true }}
       transition={{ duration: 1.0, ease: 'easeOut' }}
     >
-      <p>Loosely envisioned in Figma, lovingly coded in VS Code using React, Vite, and 
-        sprinkled with Framer Motion animations. Deployed somewhere awesome. 
-        All text set in Manrope for that extra flair.</p>
+      <p>&copy; {currentYear} Sanika Chavan. Built with React, Vite, and Framer Motion.</p>
     </motion.footer>
   )
 }
