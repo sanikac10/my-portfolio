@@ -5,7 +5,7 @@ import '../styles/ProfessionalAcademic.css';
 const experiences = [
   {
     title: 'Research Engineer – Evals Lead',
-    subheading: 'May 2026 – Present',
+    subheading: 'AGI, Inc. · May 2026 – Present',
     bullets: [
       'Own the end-to-end agentic ML pipeline—task definition, generation, validation, data collection, fine-tuning, and benchmarking—across on-device phone and computer-use agents targeting reward design, regression detection, and eval harness reliability.',
       'Curated gold-standard training datasets for fine-tuning, directly improving agent performance by 20%.',
@@ -16,7 +16,7 @@ const experiences = [
   },
   {
     title: 'AI Research — Google Gemini Project Team at Turing',
-    subheading: 'September 2025 – May 2026',
+    subheading: 'Turing · September 2025 – May 2026',
     bullets: [
       'Designed a multimodal evaluation framework for technically grounded image-generation tasks.',
       'Benchmarked frontier multimodal LLMs, including Gemini variants, for stability, variance, and consistency across repeated runs.',
