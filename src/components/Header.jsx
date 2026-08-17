@@ -39,8 +39,8 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="skills" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
-              Skills
+            <Link to="research" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
+              Research
             </Link>
           </li>
           <li>
@@ -58,11 +58,6 @@ function Header() {
           <li>
             <Link to="projects" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
               Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="research" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
-              Research
             </Link>
           </li>
           <li>

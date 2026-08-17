@@ -27,34 +27,6 @@
   border-radius: 2px;
 }
 
-.research-stats {
-  display: flex;
-  gap: 3rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.research-stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.research-stat-value {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #2efca3;
-}
-
-.research-stat-label {
-  font-size: 0.85rem;
-  color: #999;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 0.25rem;
-}
-
 .research-list {
   list-style: none;
   padding: 0;
@@ -82,6 +54,13 @@
 .research-item-title {
   color: #ddd;
   font-size: 0.98rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.research-item-title:hover {
+  color: #2efca3;
+  text-decoration: underline;
 }
 
 .research-item-year {
@@ -114,10 +93,6 @@
 @media (max-width: 768px) {
   .research-section {
     padding: 3rem 1rem;
-  }
-
-  .research-stats {
-    gap: 2rem;
   }
 
   .research-item {
