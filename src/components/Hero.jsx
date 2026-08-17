@@ -51,7 +51,7 @@ function Hero() {
       </div>
 
       <div className="hero-content">
-        <p className="hero-eyebrow">Research Engineer · Santa Clara, CA</p>
+        <p className="hero-eyebrow">Research Engineer · San Francisco Bay Area</p>
         <h1 className="hero-title">Hi, I&apos;m Sanika Chavan</h1>
 
         <p className="hero-subtitle">
