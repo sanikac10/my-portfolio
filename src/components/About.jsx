@@ -15,10 +15,10 @@ function About() {
     >
       <h2>About Me</h2>
       <p>
-        I&apos;m a Research Engineer specializing in evaluation and benchmarking of
-        frontier LLMs and multimodal systems, with a focus on memorization
-        diagnostics, reliability analysis, and structured multimodal output
-        assessment.
+        I&apos;m a Research Engineer specializing in scalable evaluation
+        infrastructure, benchmarking, and reproducibility for LLM and agentic
+        systems, with experience in automated testing, metric design, reliability
+        analysis, and ML systems.
       </p>
       <div className="about-education">
         <h3>Education</h3>

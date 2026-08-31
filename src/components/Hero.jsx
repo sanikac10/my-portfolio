@@ -16,10 +16,10 @@ function Hero() {
   useEffect(() => {
     const typed = new Typed(typedElementRef.current, {
       strings: [
-        'LLM evaluation frameworks',
-        'agentic ML pipelines',
-        'multimodal benchmarks',
-        'reliability diagnostics',
+        'scalable eval infrastructure',
+        'agentic LLM benchmarks',
+        'automated testing pipelines',
+        'reproducible ML systems',
       ],
       typeSpeed: 70,
       backSpeed: 40,
@@ -59,9 +59,9 @@ function Hero() {
         </p>
 
         <p className="hero-description">
-          Evaluating and benchmarking frontier LLMs and multimodal systems, with a
-          focus on memorization diagnostics, reliability analysis, and structured
-          multimodal output assessment.
+          Specializing in scalable evaluation infrastructure, benchmarking, and
+          reproducibility for LLM and agentic systems, with experience in
+          automated testing, metric design, and reliability analysis.
         </p>
 
         <div className="hero-cta">
