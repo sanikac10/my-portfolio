@@ -5,6 +5,7 @@ import Typed from 'typed.js';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { TbBrandX } from 'react-icons/tb';
 import { SiGooglescholar } from 'react-icons/si';
+import { profile } from '../data/content';
 import '../styles/Hero.css';
 
 const resumePdf = `${import.meta.env.BASE_URL}assets/resume.pdf`;
@@ -15,12 +16,7 @@ function Hero() {
 
   useEffect(() => {
     const typed = new Typed(typedElementRef.current, {
-      strings: [
-        'scalable eval infrastructure',
-        'agentic LLM benchmarks',
-        'automated testing pipelines',
-        'reproducible ML systems',
-      ],
+      strings: profile.focus,
       typeSpeed: 70,
       backSpeed: 40,
       loop: true,
@@ -55,12 +51,12 @@ function Hero() {
         <h1 className="hero-title">Hi, I&apos;m Sanika Chavan</h1>
 
         <p className="hero-subtitle">
-          I build <span ref={typedElementRef}></span>
+          I work on <span ref={typedElementRef}></span>
         </p>
 
         <p className="hero-description">
-          Specializing in scalable evaluation infrastructure, benchmarking, and
-          reproducibility for LLM and agentic systems, with experience in
+          Specializing in scalable evaluation infrastructure, benchmarking, post
+          training, and reproducibility for LLM and agentic systems, with experience in
           automated testing, metric design, and reliability analysis.
         </p>
 
@@ -118,7 +114,7 @@ function Hero() {
         </div>
 
         <div className="scroll-arrow">
-          <Link to="about" smooth={true} duration={600} className="arrow-link"></Link>
+          <Link to="publications" smooth={true} duration={600} className="arrow-link"></Link>
         </div>
       </div>
     </motion.section>

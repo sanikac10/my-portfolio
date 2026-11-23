@@ -31,7 +31,7 @@
   height: 32vw;
   min-width: 280px;
   min-height: 280px;
-  background: #2efca3;
+  background: #3b82f6;
   top: -10%;
   left: -8%;
   animation: drift-1 22s ease-in-out infinite;
@@ -42,7 +42,7 @@
   height: 26vw;
   min-width: 220px;
   min-height: 220px;
-  background: #147ca6;
+  background: #1e3a8a;
   bottom: -12%;
   right: -6%;
   animation: drift-2 26s ease-in-out infinite;
@@ -53,7 +53,7 @@
   height: 20vw;
   min-width: 180px;
   min-height: 180px;
-  background: #6c5ce7;
+  background: #475569;
   top: 45%;
   left: 55%;
   opacity: 0.22;
@@ -102,7 +102,7 @@
 }
 
 .hero-eyebrow {
-  color: #2efca3;
+  color: #60a5fa;
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -127,7 +127,7 @@
 }
 
 .hero-subtitle span {
-  color: #2efca3;
+  color: #60a5fa;
   font-weight: 600;
 }
 
@@ -146,9 +146,9 @@
 .hero-resume-btn {
   display: inline-block;
   padding: 0.75rem 1.75rem;
-  border: 2px solid #2efca3;
+  border: 2px solid #60a5fa;
   border-radius: 999px;
-  color: #2efca3;
+  color: #60a5fa;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.3px;
@@ -156,7 +156,7 @@
 }
 
 .hero-resume-btn:hover {
-  background-color: #2efca3;
+  background-color: #60a5fa;
   color: #0f0f0f;
   transform: translateY(-2px);
 }
@@ -167,7 +167,7 @@
 }
 
 .contact-icon {
-  color: #2efca3;
+  color: #60a5fa;
   font-size: 1.8rem;
   transition: all 0.3s ease;
 }
@@ -190,7 +190,7 @@
 .scroll-arrow::before {
   content: 'Scroll Down';
   font-size: 0.8rem;
-  color: #2efca3;
+  color: #60a5fa;
   opacity: 0.8;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -199,12 +199,12 @@
 .arrow-link {
   width: 30px;
   height: 30px;
-  border: 2px solid #2efca3;
+  border: 2px solid #60a5fa;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2efca3;
+  color: #60a5fa;
   text-decoration: none;
   position: relative;
   transition: all 0.3s ease;
@@ -218,9 +218,9 @@
 }
 
 .arrow-link:hover {
-  background-color: #2efca3;
+  background-color: #60a5fa;
   color: #0f0f0f;
-  box-shadow: 0 0 15px rgba(46, 252, 163, 0.5);
+  box-shadow: 0 0 15px rgba(96, 165, 250, 0.5);
 }
 
 @keyframes bounce {

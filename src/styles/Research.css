@@ -23,7 +23,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background-color: #2efca3;
+  background-color: #60a5fa;
   border-radius: 2px;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .research-item-title:hover {
-  color: #2efca3;
+  color: #60a5fa;
   text-decoration: underline;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .research-item-venue {
-  color: #2efca3;
+  color: #60a5fa;
   font-size: 0.85rem;
   font-weight: 600;
   white-space: nowrap;
@@ -82,9 +82,9 @@
   align-items: center;
   gap: 0.6rem;
   padding: 0.75rem 1.75rem;
-  border: 2px solid #2efca3;
+  border: 2px solid #60a5fa;
   border-radius: 999px;
-  color: #2efca3;
+  color: #60a5fa;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -92,7 +92,7 @@
 }
 
 .research-scholar-btn:hover {
-  background-color: #2efca3;
+  background-color: #60a5fa;
   color: #0f0f0f;
   transform: translateY(-2px);
 }
