@@ -70,6 +70,13 @@
   white-space: nowrap;
 }
 
+.research-item-venue {
+  color: #2efca3;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .research-scholar-btn {
   display: inline-flex;
   align-items: center;

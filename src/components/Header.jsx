@@ -34,13 +34,13 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
-              About
+            <Link to="publications" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
+              Publications
             </Link>
           </li>
           <li>
-            <Link to="research" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
-              Research
+            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} activeClass="active">
+              About
             </Link>
           </li>
           <li>

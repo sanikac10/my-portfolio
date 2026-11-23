@@ -18,8 +18,8 @@ function App() {
       <div id="top" style={{ position: 'absolute', top: 0 }}></div>
 
       <div className="main-content">
-        <About />
         <Research />
+        <About />
         <ProfessionalAcademic />
         <Projects />
         <Footer />
