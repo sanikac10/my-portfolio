@@ -76,11 +76,11 @@ export const publications = [
 export const experiences = [
   {
     title: 'Research Engineer – Evals Lead',
-    subheading: 'AGI, Inc. · May 2026 – Present',
+    subheading: 'AGI Inc · May 2026 – Present',
     bullets: [
       'Building a scalable benchmarking and evaluation automation system for agentic LLMs, defining metrics and testing protocols for continuous automated evaluation, regression detection, and reproducible model comparisons.',
       'Engineering state-control and orchestration infrastructure for live mobile-app benchmarks, automating device/application reset and pre-run validation to enable reproducible evaluation despite dynamic external state.',
-      'Designed QA rubrics and golden-trajectory review processes for long-horizon tasks, establishing auditable evaluation frameworks that separate model failures from judge, task, environment, and harness errors.',
+      'Designed QA rubrics and golden-trajectory review processes for long-horizon tasks, separating model failures from judge, task, environment, and harness issues, and turning failure analysis into SFT/RL post-training iterations for targeted model improvement.',
     ],
     tags: [],
   },
