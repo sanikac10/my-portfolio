@@ -26,10 +26,10 @@ Focus areas: Agentic Evaluation Design, Reinforcement Learning Environments, Pos
 
 ## Experience
 ### Research Engineer – Evals Lead
-AGI, Inc. · May 2026 – Present
+AGI Inc · May 2026 – Present
 - Building a scalable benchmarking and evaluation automation system for agentic LLMs, defining metrics and testing protocols for continuous automated evaluation, regression detection, and reproducible model comparisons.
 - Engineering state-control and orchestration infrastructure for live mobile-app benchmarks, automating device/application reset and pre-run validation to enable reproducible evaluation despite dynamic external state.
-- Designed QA rubrics and golden-trajectory review processes for long-horizon tasks, establishing auditable evaluation frameworks that separate model failures from judge, task, environment, and harness errors.
+- Designed QA rubrics and golden-trajectory review processes for long-horizon tasks, separating model failures from judge, task, environment, and harness issues, and turning failure analysis into SFT/RL post-training iterations for targeted model improvement.
 
 ### AI Research — Google Gemini Project Team at Turing
 Turing · September 2025 – May 2026
